@@ -18,7 +18,26 @@
 	--titlebar-background-focused: var(--color-base-10);
 }
 
+/*Início de alteração de cor de bold*/
 .cm-strong, b, strong {
 	color: var(--interactive-accent) !important;
 	font-weight: var(--font-bold) !important;
 }
+/*Fim de alteração de cor de bold*/
+
+/*Início de alteração de cor do scroll*/
+::-webkit-scrollbar-thumb {
+	background-color: var(--interactive-accent) !important;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+	background-color: var(--interactive-accent-hover) !important;
+  }
+  /*Fim de alteração de cor do scroll*/
+
+  /*Início de hover ao passar o mouse nas pastas*/
+  .theme-dark:not(.css-settings-manager) :not(.is-grabbing) .nav-file-title:hover, .theme-dark:not(.css-settings-manager) :not(.is-grabbing) .nav-folder-title:hover, .theme-dark:not(.css-settings-manager) .tree-item-self.is-clickable:hover, .theme-light:not(.css-settings-manager) :not(.is-grabbing) .nav-file-title:hover, .theme-light:not(.css-settings-manager) :not(.is-grabbing) .nav-folder-title:hover, .theme-light:not(.css-settings-manager) .tree-item-self.is-clickable:hover, .ctp-full-palette :not(.is-grabbing) .nav-file-title:hover, .ctp-full-palette :not(.is-grabbing) .nav-folder-title:hover, .ctp-full-palette .tree-item-self.is-clickable:hover {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+  /*Fim de hover ao passar o mouse nas pastas*/
